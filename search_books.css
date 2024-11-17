@@ -1,0 +1,131 @@
+/* General Styles */
+body {
+    font-family: 'Cambria', serif;
+    background-color: #f8f9fa; /* Light neutral background */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #008080; /* Teal color */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+/* Main Section */
+main {
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main h1 {
+    color: #008080;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+/* Form Styles */
+form {
+    background-color: #ffffff; /* White form background */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    width: 50%; /* Fixed width for the form */
+    max-width: 600px; /* Ensure responsiveness */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+form label {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #555;
+    margin-bottom: 5px;
+    align-self: flex-start; /* Align labels to the left */
+}
+
+form input {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ced4da; /* Light gray border */
+    border-radius: 5px;
+    margin-bottom: 15px;
+    background-color: #f8f9fa; /* Light background for inputs */
+    transition: border-color 0.3s;
+}
+
+form input:focus {
+    outline: none;
+    border-color: #008080; /* Highlight input on focus */
+}
+
+form button {
+    background-color: #008080;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 5px;
+}
+
+form button:hover {
+    background-color: #006666; /* Slightly darker teal on hover */
+}
+
+/* Table Styles */
+table {
+    width: 80%;
+    margin: 30px auto 0 auto;
+    border-collapse: collapse;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+}
+
+table th, table td {
+    border: 1px solid #dee2e6; /* Light border */
+    padding: 12px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+table th {
+    background-color: #008080; /* Teal for headers */
+    color: white;
+    font-weight: 600;
+}
+
+table tr:nth-child(even) {
+    background-color: #f8f9fa; /* Alternating row background */
+}
+
+table tr:hover {
+    background-color: #e9ecef; /* Highlight row on hover */
+}
+
+/* Footer */
+footer {
+    background-color: #008080;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

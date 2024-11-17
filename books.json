@@ -1,0 +1,30 @@
+[
+    {
+        "id": "4",
+        "title": "2nd",
+        "author": "Habilis",
+        "publication_year": "2002",
+        "genre": "Evolution"
+    },
+    {
+        "id": "6",
+        "title": "feature",
+        "author": "second",
+        "publication_year": "2002",
+        "genre": "tested"
+    },
+    {
+        "id": "8",
+        "title": "sample",
+        "author": "2nd",
+        "publication_year": "2002",
+        "genre": "tested"
+    },
+    {
+        "id": "13",
+        "title": "BioInformatics: From Genomes to Drugs",
+        "author": " Ralf Hofest\u00e4dt",
+        "publication_year": "2002",
+        "genre": "Life"
+    }
+]

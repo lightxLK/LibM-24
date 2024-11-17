@@ -1,0 +1,48 @@
+<?php
+session_start();
+$username = isset($_SESSION['username']) ? $_SESSION['username'] : null;
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1><a href="index.php" style="text-decoration: none; color: inherit;">Welcome to the Library Management System</a></h1>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="index.php">Home</a></li>
+                <li><a href="add_book.html">Add Book</a></li>
+                <li><a href="search_books.html">Search Books</a></li>
+                <?php if ($username): ?>
+                    <li><a href="logout.php">Logout (<?php echo htmlspecialchars($username); ?>)</a></li>
+                <?php else: ?>
+                    <li><a href="login.html">Log In</a></li>
+                <?php endif; ?>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Manage Your Books Efficiently</h2>
+            <?php if ($username): ?>
+                <p>Welcome, <?php echo htmlspecialchars($username); ?>! Manage books, search the library, and more.</p>
+            <?php else: ?>
+                <p>Register or Log In to manage books, search the library, and more!</p>
+                <div class="actions">
+                    <a href="register.html" class="btn">Register</a>
+                    <a href="login.html" class="btn">Log In</a>
+                </div>
+            <?php endif; ?>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Library Management System</p>
+    </footer>
+</body>
+</html>

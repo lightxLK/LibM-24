@@ -1,0 +1,132 @@
+/* General Styles */
+body {
+    font-family: 'Cambria', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1, h2 {
+    margin: 0;
+    font-weight: normal;
+}
+
+/* Header Styles */
+header {
+    background-color: #0044cc;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 a {
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+/* Navigation Styles */
+nav {
+    margin-top: 20px;
+    background-color: #003366;
+    padding: 10px;
+}
+
+.nav-menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-menu li {
+    margin: 0 20px;
+}
+
+.nav-menu a {
+    color: white;
+    font-size: 1.1rem;
+}
+
+.nav-menu a:hover {
+    color: #ffcc00;
+}
+
+/* Main Content Styles */
+main {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+section {
+    background-color: white;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+h2 {
+    color: #0044cc;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #1b1b1b;
+}
+
+.actions {
+    margin-top: 20px;
+}
+
+.btn {
+    background-color: #0044cc;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin: 10px;
+}
+
+.btn:hover {
+    background-color: #003366;
+}
+
+/* Logged-in User Styles */
+.logged-in p {
+    font-size: 1.2rem;
+    color: #0044cc;
+}
+
+.actions .btn {
+    background-color: #00cc44;
+}
+
+.actions .btn:hover {
+    background-color: #008c29;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #003366; /* Dark blue background */
+    color: #f8f9fa; /* Light gray text for better contrast */
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9rem; /* Slightly smaller font for subtlety */
+}
+
+footer p {
+    margin: 0;
+    color: #ffffff; /* White text for maximum contrast */
+}
